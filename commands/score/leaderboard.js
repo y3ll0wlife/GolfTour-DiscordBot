@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
     let lowestScore14 = data[i].LowestScoreInMaxForteen;
 
     // Place
-    if (num == 10) msg += num + " |";
+    if (num >= 10) msg += num + " |";
     else msg += num + "  |";
 
     // Name
