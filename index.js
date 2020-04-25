@@ -29,6 +29,7 @@ function readComs(folder) {
 
 readComs("score");
 readComs("bot");
+readComs("other");
 
 console.log("----------------------------------\n| Command name           | Status |\n----------------------------------");
 

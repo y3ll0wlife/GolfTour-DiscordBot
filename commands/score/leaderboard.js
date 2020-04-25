@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
     .then((res) => res.json())
     .then((json) => json);
 
-  let msg = "```#  | Namn                  | Rundor | OOM Poäng  | Sämst Poäng (Topp 14)  | Poäng (Medel)   | Slag (Medel)\n";
+  let msg = "```1  | Namn                  | Rundor | OOM Poäng  | Sämst Poäng (Topp 14)  | Poäng (Medel)   | Slag (Medel)\n";
 
   for (let i = 0; i < data.length; i++) {
     let num = i + 1;
@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
     let lowestScore14 = data[i].LowestScoreInMaxForteen;
 
     // Place
-    if (num == 10) msg += num + " |";
+    if (num >= 10) msg += num + " |";
     else msg += num + "  |";
 
     // Name

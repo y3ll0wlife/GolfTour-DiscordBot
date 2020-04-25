@@ -12,7 +12,12 @@ module.exports.run = async (bot, message, args) => {
       .then((res) => res.json())
       .then((json) => json);
 
-    return message.channel.send(data);
+    if (data.Message == "An error has occurred.") {
+      return message.channel.send("**Invalid ID**");
+      //return message.channel.send("```" + data.Message + "\n" + data.ExceptionMessage + "\n" + data.ExceptionType + "```");
+    }
+
+    return message.channel.send("Done");
   } else {
     return message.channel.send(":lock: Saknar rollen ``Admin``");
   }
