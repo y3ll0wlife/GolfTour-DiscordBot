@@ -13,7 +13,7 @@ Bot for managing the Golftour website and to report data to the dashboard
 
 Data using `{}` are required paramaters and `()` are optional.
 
-```http
+```
 PUT https://discord.com/api/v9/applications/{application_id}/(guilds/{guild_id})/commands
 Headers: 
     Authorization: Bot YOUR_DISCORD_TOKEN,
